@@ -17,6 +17,10 @@ import json
 BG_COLOR = "#212121"
 EXIT_BG_COLOR = "#009e8c"
 BG_COLOR_TEXT = '#d1d9eb'
+
+IP = '0.0.0.0'
+PORT = 12345
+
 SUCCESS_MESSAGES = ["Good Job!", "Great!", "Fantastic work!", "Excellent effort!", "Bravo!", "Well done!", "Superb!", "Amazing job!", "Keep up the good work!", "Outstanding!", "Impressive!", "Terrific!"]
 class GUI:
     def __init__(self, client):
@@ -783,7 +787,7 @@ class GUI:
         
 
 if __name__ == '__main__':
-    client = MultiThreadedClient('10.100.102.12', 12345)
+    client = MultiThreadedClient(IP, PORT)
     client.run()
     app = GUI(client)
     app.run()
