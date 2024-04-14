@@ -12,7 +12,7 @@ class MultiThreadedClient(threading.Thread):
         super().__init__()
         self.host = host
         self.port = port
-        self.CHAT_SERVER_IP = "10.100.102.12"
+        self.CHAT_SERVER_IP = "0.0.0.0"
         self.CHAT_SERVER_PORT = 5555
         self.chat_messages = []
         self.new_subject = ""
