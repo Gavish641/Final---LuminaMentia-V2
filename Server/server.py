@@ -5,7 +5,7 @@ from getmac import getmac
 import json
 import random
 
-SERVER_IP = '10.100.102.12' # IP address of the server
+SERVER_IP = '0.0.0.0' # IP address of the server
 SERVER_PORT = 12345 # Port to listen on
 
 class Server:
